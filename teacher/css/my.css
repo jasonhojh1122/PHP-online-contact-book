@@ -1,0 +1,244 @@
+:root{
+	--body_background: #e2e2e2;
+	--page_background: #ffffff;
+	--bulletin_background: #d1c9be;
+	--cube_background: #bcb3a7;
+	--cube_hover_background: #ccc2b5;
+	--green: #60ce06;
+	--red: #e00b0b;
+	--del_red: #993b3b;
+}
+
+
+*{
+	margin: 0; border: 0; padding: 0; text-decoration: none;
+}
+
+body{
+	height: 100%;
+	width: 100%;
+	background: var(--body_background);
+	font-family:'Noto Sans TC',sans-serif;
+}
+
+#page{
+	float: right;
+	margin: 30px 30px 30px 30px;
+	width: calc(100% - 260px);
+	background: var(--page_background);
+	background-attachment: fixed;
+	padding-bottom: 40px;
+	font-family:'Noto Sans TC',sans-serif;
+	transition: width 0.3s;
+}
+
+#page.active{
+	width: calc(100% - 60px);
+}
+
+#page>h2{
+	padding-left: 40px;
+	padding-top: 20px;
+	font-family:'Noto Sans TC',sans-serif;
+}
+
+.bulletin{
+	margin-top: 20px;
+	margin-left: 40px;
+	margin-right: 40px;
+	background: var(--bulletin_background);
+	font-family:'Noto Sans TC',sans-serif;
+}
+
+h3{
+	font-family:'Noto Sans TC',sans-serif;
+	padding-left: 15px;
+	padding-top: 15px;
+}
+
+.cube{
+	height: 40px;
+	line-height: 40px;
+	border-top: 3px solid var(--cube_background);
+	font-family:'Noto Sans TC',sans-serif;
+	margin-left: 30px;
+}
+
+.cube:hover{
+	background: var(--cube_hover_background);
+}
+
+.left{
+	padding-left: 15px;
+	height: 40px;
+	float: left;
+	vertical-align: middle;
+	font-family:'Noto Sans TC',sans-serif;
+}
+
+.right{
+	height: 40px;
+	padding-right: 15px;
+	padding-left: 15px;
+	float: right;
+	background: var(--cube_hover_background);
+	font-family:'Noto Sans TC',sans-serif;
+}
+
+.right:hover{
+	height: 40px;
+	padding-right: 15px;
+	padding-left: 15px;
+	float: right;
+}
+
+.detail{
+	background: var(--cube_background);
+	font-family:'Noto Sans TC',sans-serif;
+	margin-left: 30px;
+}
+
+.redBox{
+	display: inline-block;
+	height: 40px;
+	width:	10px;
+	background: var(--red);
+	float: left;
+}
+
+.greenBox{
+	display: inline-block;
+	height: 40px;
+	width:	10px;
+	background: var(--green);
+	float: left;
+}
+
+.contain{
+	height: 30px;
+	
+}
+
+.redBoxSmall{
+	display: inline-block;
+	height: 100%;
+	width:	10px;
+	background: var(--red);
+	float: left;
+}
+
+.greenBoxSmall{
+	display: inline-block;
+	height: 100%;
+	width:	10px;
+	background: var(--green);
+	float: left;
+}
+
+.leftSmall{
+	display: inline-block;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 30px;
+	line-height: 30px;
+	background: var(--bulletin_background);
+	font-family:'Noto Sans TC',sans-serif;
+}
+
+input[type=checkbox]{
+	float: left;
+	vertical-align: middle;
+	margin-right: 5px;
+	font-family:'Noto Sans TC',sans-serif;
+}
+
+.img{
+	width: 60%;
+	border-radius: 5%;
+	margin-left: 30px
+}
+
+.info{
+	margin-left: 30px;
+}
+
+.submitButton{
+	margin-left: 15px;
+	height: 25px;
+	width: 80px;
+	background-color: var(--bulletin_background);
+	font-family:'Noto Sans TC',sans-serif;
+}
+
+a{
+	color: black;
+}
+
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 100;
+  src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Thin.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Thin.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Thin.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 300;
+  src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.otf) format('opentype');
+}
+@font-face {
+   font-family: 'Noto Sans TC';
+   font-style: normal;
+   font-weight: 400;
+   src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.woff2) format('woff2'),
+        url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.woff) format('woff'),
+        url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.otf) format('opentype');
+ }
+@font-face {
+   font-family: 'Noto Sans TC';
+   font-style: normal;
+   font-weight: 500;
+   src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Medium.woff2) format('woff2'),
+        url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Medium.woff) format('woff'),
+        url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Medium.otf) format('opentype');
+ }
+@font-face {
+   font-family: 'Noto Sans TC';
+   font-style: normal;
+   font-weight: 700;
+   src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Bold.woff2) format('woff2'),
+        url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Bold.woff) format('woff'),
+        url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Bold.otf) format('opentype');
+ }
+@font-face {
+   font-family: 'Noto Sans TC';
+   font-style: normal;
+   font-weight: 900;
+   src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Black.woff2) format('woff2'),
+        url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Black.woff) format('woff'),
+        url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Black.otf) format('opentype');
+ }
+ 
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}

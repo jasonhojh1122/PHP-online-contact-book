@@ -1,0 +1,14 @@
+<!-- <div class="cube">
+	<div class="upper">
+		<label>{{courseName}}</label>
+		<input type="checkbox" name="check_list[]" value="{{courseID}}">選取</input>
+	</div>
+	<p><label>課程描述：</label><br> {{courseDescribe}} <br><br> <label>上課時間：</label><br> {{courseTime}}</p>
+</div>
+<br>-->
+<tr onclick="choose('{{courseID}}')" style="cursor:pointer;">
+	<td align="center">{{courseName}}</td>
+	<td align="left">{{courseDescribe}}</td>
+	<td align="center">{{courseTime}}</td>
+	<td align="center"><input type="checkbox" name="check_list[]" value="{{courseID}}" id="{{courseID}}"></input></td>
+</tr>

@@ -1,0 +1,4 @@
+deprecate/
+node_modules/
+useless/
+.htaccess

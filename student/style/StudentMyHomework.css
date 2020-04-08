@@ -1,0 +1,186 @@
+body{
+  overflow: auto;
+}
+body::-webkit-scrollbar{width:0;}
+/*背景*/
+.bg{
+  position:fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -999;
+}
+.bg img{
+  min-height: 100%;
+  width: 100%;
+}
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.open{
+    color: #fff;
+    float: left;
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 1.5%;
+    margin-top: 10px;  
+}
+.open:hover,
+.open:focus {
+    color: #aaa;
+    text-decoration: none;
+    cursor: pointer;
+}
+#MyHWTitle{
+  font-size:50px;
+  color:#fff;
+  font-family:'Schoolbell'; 
+  font-style: italic;
+  font-weight:bold;
+  margin-left:1.5%;
+  margin-top:10px;
+  margin-bottom:5px;
+  float: left;
+}
+
+.mytable{
+  border-collapse: collapse;
+  font-family: 'Noto Sans TC',sans-serif;
+  color: white;
+  width: 100%;
+}
+.mytable, th, td{
+  border:1px solid white;
+  padding: 8px 16px;
+}
+.myhw{
+  font-weight: 300;
+}
+.myhw:hover{
+  background-color: #777;
+  cursor: pointer;
+}
+
+/* The Modal (background) */
+.modal { 
+    display:none;/* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content */
+.modal-content {
+    font-family:'Noto Sans TC',sans-serif; 
+    background-color: #ddd;
+    margin: auto;
+    padding: 20px;
+    border: 8px dashed #888;
+    width: 60%;
+    border-radius: 16px;
+    font-size: 18px;
+    color: black;
+}
+
+.modal-content input[type="textarea"]{
+  margin-top: 17px;
+  margin-left:5%;
+  margin-bottom: 20px;
+  height:20px;
+  padding: 10px 12px;
+  font-size: 16px;
+  border: 2px dashed #ddd;
+  border-radius: 16px;
+  width: 65%;
+  font-family: 'Noto Sans TC',sans-serif;
+  word-break: break-all;
+}
+.modal-content input[type="textarea"]:focus{
+  outline: none;
+}
+
+#sendAns{
+  margin-top: 15px;
+  margin-right:8%;
+  border-radius: 50%;
+  height: 50px;
+  width:50px;
+  font-size:16px;
+  float:right;
+  border:2px dashed #ddd;
+  background-image: url('Icon/send-icon.png');
+  background-color: #ffffff;
+  background-size: 74%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#sendAns:hover{background-color: #777;}
+/*
+* Noto Sans TC (Chinese_traditional) http://www.google.com/fonts/earlyaccess
+ */
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 100;
+  src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Thin.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Thin.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Thin.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 300;
+  src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.otf) format('opentype');
+}
+@font-face {
+   font-family: 'Noto Sans TC';
+   font-style: normal;
+   font-weight: 400;
+   src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.woff2) format('woff2'),
+        url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.woff) format('woff'),
+        url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.otf) format('opentype');
+ }
+@font-face {
+   font-family: 'Noto Sans TC';
+   font-style: normal;
+   font-weight: 500;
+   src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Medium.woff2) format('woff2'),
+        url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Medium.woff) format('woff'),
+        url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Medium.otf) format('opentype');
+ }
+@font-face {
+   font-family: 'Noto Sans TC';
+   font-style: normal;
+   font-weight: 700;
+   src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Bold.woff2) format('woff2'),
+        url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Bold.woff) format('woff'),
+        url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Bold.otf) format('opentype');
+ }
+@font-face {
+   font-family: 'Noto Sans TC';
+   font-style: normal;
+   font-weight: 900;
+   src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Black.woff2) format('woff2'),
+        url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Black.woff) format('woff'),
+        url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Black.otf) format('opentype');
+ }

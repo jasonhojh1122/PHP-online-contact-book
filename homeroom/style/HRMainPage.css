@@ -1,0 +1,351 @@
+body{
+  overflow: auto;
+}
+body::-webkit-scrollbar{width:0;}
+/*背景*/
+.bg{
+  position:fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -999;
+}
+.bg img{
+  min-height: 100%;
+  width: 100%;
+}
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.open{
+    color: #fff;
+    float: left;
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 1.5%;
+    margin-top: 10px;  
+}
+.open:hover,
+.open:focus {
+    color: #aaa;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.title{
+  font-size:50px;
+  color:#fff;
+  font-family:'Schoolbell'; 
+  font-style: italic;
+  font-weight:bold;
+  margin-left:1.5%;
+  margin-top:10px;
+  margin-bottom:5px;
+  float: left;
+}
+/* Warning */
+.warning {
+  font-size: 14px;
+  font-family: 'Noto Sans TC',sans-serif;
+  background-color: #ffc0cb;
+  border: 2px dashed #f00;
+  min-width: 30%;
+  padding: 4px 16px;
+  margin-top: 15px;
+  margin-left: 3%;
+  display:inline-block;
+  float: left;
+}
+
+#SignInHere{
+  font-size:24px;
+  color:#fff;
+  font-family:'Schoolbell'; 
+  font-style: italic;
+  font-weight:bold;
+  text-align:right;
+  margin-top:20px;
+  margin-right: 10px;
+  float:right;
+}
+#signForm input[type = "text"]{
+  margin-right: 15px;
+  margin-top: 15px;
+  padding: 6px 12px;
+  height: 30px;
+  width: 70px;
+  font-family: 'Noto Sans TC',sans-serif;
+  font-size: 14px;
+  border:2px solid #ddd;
+  border-radius: 4px;
+  float: right;
+}
+#signForm input[type = "text"]:focus{
+  outline:none;
+}
+.SignIn{
+  margin-right: 1.5%;
+  margin-top:15px;
+  display: inline-block;
+  cursor: pointer;
+  background-color: #fff;
+  width:50px;
+  height:50px;
+  border:3px outset white;
+  border-radius:  50%;
+  float:right;
+  background-image: url('Icon/press-icon.png');
+  background-size: 90%;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+.SignIn:hover {background-color: #ccc;}
+
+/*Bulletin Content*/
+.bulletin{
+  color: white;
+  margin-left: 25%;
+  width:  50%;
+  font-family: 'Noto Sans TC',sans-serif;
+}
+.bulletin tr{
+  padding: 4px 8px;
+}
+.bulletin a:link{
+  color:#3498db;
+}
+.bulletin a:hover{
+  color:#ddd;
+}
+.bulletin a:visited{
+  color: #c39bd3;
+}
+.bullImg{
+  width:auto;
+  height:auto;
+  max-width: 70%;
+  max-height: 70%;
+  border: 1px solid #333;
+  margin-top: 5px;
+  margin-left: 15%;
+  border-radius: 20px;
+}
+.courseProg{
+  color: white;
+  font-family: 'Noto Sans TC',sans-serif;
+  margin-left: 25%;
+  margin-top:40px; 
+  width: 50%;
+}
+.courseProg table,th,td{
+  border: 1px solid white;
+  padding: 4px 8px;
+}
+
+.courseUpdate{
+}
+.courseUpdate:hover{
+  background-color: #777;
+  cursor:pointer;
+}
+/* The Modal (background) */
+.modal { 
+    display:none;/* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content */
+.modal-content {
+    font-family:'Noto Sans TC',sans-serif; 
+    background-color: #ddd;
+    margin: auto;
+    padding: 20px;
+    border: 8px dashed #888;
+    width: 60%;
+    border-radius: 16px;
+    font-size: 18px;
+    color: black;
+}
+
+.modal-content input[type="textarea"]{
+  margin-top: 17px;
+  margin-left:5%;
+  margin-bottom: 20px;
+  height:20px;
+  padding: 10px 12px;
+  font-size: 16px;
+  border: 2px dashed #ddd;
+  border-radius: 16px;
+  width: 65%;
+  font-family: 'Noto Sans TC',sans-serif;
+  word-break: break-all;
+}
+.modal-content input[type="textarea"]:focus{
+  outline: none;
+}
+
+.weekHW{
+  text-align: center;
+}
+.HWbutton1{
+  padding: 6px 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+  border:4px dashed #777;
+  background-color: #ddd;
+  font-size: 20px;
+  font-family: 'Noto Sans TC',sans-serif;
+}
+.HWbutton1:hover{
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+}
+
+/*日曆區塊*/
+#Calendar{
+  width:45%;
+  margin-top: 50px;
+  margin-left: 27.5%;
+  margin-bottom:20px;
+  height:500px;
+  border-radius: 20px;
+  border:7px dashed #555;
+
+}
+#Calendar iframe{
+  overflow: auto;
+  border:0;
+  width: 100%;
+  height:500px;
+}
+#Calendar iframe::-webkit-scrollbar{
+  width:0;
+}
+
+
+
+
+.dropbtn {
+    background-color: #ddd;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    font-family: 'Noto Sans TC',sans-serif;
+    border: 5px dashed #777;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.dropbtn:focus{
+    outline: none;
+}
+.dropdown {
+    font-family: 'Noto Sans TC',sans-serif;
+    position: relative;
+    display: inline-block;
+    float: right;
+    margin-right:1.5%; 
+    margin-top:10px;
+}
+.dropdown-content {
+    border-radius: 12px;
+    float: right;
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    border-radius: 12px;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #555;
+    color: white;
+}
+
+
+
+/*
+* Noto Sans TC (Chinese_traditional) http://www.google.com/fonts/earlyaccess
+ */
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 100;
+  src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Thin.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Thin.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Thin.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 300;
+  src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.otf) format('opentype');
+}
+@font-face {
+   font-family: 'Noto Sans TC';
+   font-style: normal;
+   font-weight: 400;
+   src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.woff2) format('woff2'),
+        url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.woff) format('woff'),
+        url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.otf) format('opentype');
+ }
+@font-face {
+   font-family: 'Noto Sans TC';
+   font-style: normal;
+   font-weight: 500;
+   src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Medium.woff2) format('woff2'),
+        url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Medium.woff) format('woff'),
+        url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Medium.otf) format('opentype');
+ }
+@font-face {
+   font-family: 'Noto Sans TC';
+   font-style: normal;
+   font-weight: 700;
+   src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Bold.woff2) format('woff2'),
+        url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Bold.woff) format('woff'),
+        url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Bold.otf) format('opentype');
+ }
+@font-face {
+   font-family: 'Noto Sans TC';
+   font-style: normal;
+   font-weight: 900;
+   src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Black.woff2) format('woff2'),
+        url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Black.woff) format('woff'),
+        url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Black.otf) format('opentype');
+ }
